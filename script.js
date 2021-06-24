@@ -7,3 +7,8 @@ const menu = {
 
 // Store selected menu items in an array
 let outputItems = []
+
+// Generate random number between 0 and num - 1
+const generateRandomNumber = (num) => {
+    return Math.floor(Math.random() * num)
+}
