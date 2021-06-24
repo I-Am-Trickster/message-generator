@@ -4,3 +4,6 @@ const menu = {
     drink: ['water', 'ice lemon tea', 'milk oolong tea', 'milo', 'hot chocolate'],
     dessert: ['ice cream', 'tiramisu', 'chocolate cake', 'apple pie', 'chocolate chip cookie']
 }
+
+// Store selected menu items in an array
+let outputItems = []
