@@ -3,7 +3,7 @@ const menu = {
     mainCourse: ['fried rice', 'baked rice', 'chicken rice', 'kueh teow', 'singapore mee'],
     drink: ['water', 'ice lemon tea', 'milk oolong tea', 'milo', 'hot chocolate'],
     dessert: ['ice cream', 'tiramisu', 'chocolate cake', 'apple pie', 'chocolate chip cookie']
-}
+};
 
 // Store selected menu items in an array
 let outputItems = [];
@@ -11,7 +11,7 @@ let outputItems = [];
 // Generate random number between 0 and num - 1
 const generateRandomNumber = (num) => {
     return Math.floor(Math.random() * num);
-}
+};
 
 // Iterate over the object
 for (let item in menu) {
@@ -29,5 +29,14 @@ for (let item in menu) {
             break;
         default:
             outputItems.push('Unable to choose what you should eat/drink');
-    }
-}
+    };
+};
+
+// Function to format output message
+const formatMessage = (item) => {
+  const outputMessage = outputItems.join('\n');
+  console.log(outputMessage);
+};
+
+// Function call
+formatMessage(outputItems);
